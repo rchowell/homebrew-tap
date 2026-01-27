@@ -1,7 +1,5 @@
 # Homebrew
 
-## Install
-
 ```sh
 brew tap rchowell/tap
 ```
