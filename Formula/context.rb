@@ -1,17 +1,25 @@
 class Context < Formula
     desc "Context is a tool for keeping context documentation fresh"
     homepage "https://github.com/rchowell/context"
-    url "https://github.com/rchowell/context/archive/refs/tags/v0.1.0.tar.gz"
-    sha256 "c7d65ce4f4a9795e73bc871be19066c5d6f31b957aca14ec72eecd4e8bb19fdb"
     license "Apache-2.0"
+    version "0.1.0"
   
-    depends_on "rust" => :build
+    on_macos do
+      on_arm do
+        url "https://github.com/rchowell/context/releases/download/v0.1.0/context-0.1.0-aarch64-apple-darwin.tar.gz"
+        sha256 "b2d4510c13759f8480aa7beaf64528fc9b463bf98fbdabbf8658a7e954fcf8b9"
+      end
+    #   on_intel do
+    #     url "https://github.com/rchowell/context/releases/download/v0.1.0/context-0.1.0-x86_64-apple-darwin.tar.gz"
+    #     sha256 "INTEL_SHA_HERE"
+    #   end
+    end
   
     def install
-      system "cargo", "install", *std_cargo_args
+      bin.install "context"
     end
   
     test do
       system bin/"context", "--version"
     end
-end
+  end
