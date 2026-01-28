@@ -2,8 +2,8 @@ class Context < Formula
     desc "Context is a tool for keeping context documentation fresh"
     homepage "https://github.com/rchowell/context"
     url "https://github.com/rchowell/context/archive/refs/tags/v0.1.0.tar.gz"
-    sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
-    license "MIT"
+    sha256 "c7d65ce4f4a9795e73bc871be19066c5d6f31b957aca14ec72eecd4e8bb19fdb"
+    license "Apache-2.0"
   
     depends_on "rust" => :build
   
