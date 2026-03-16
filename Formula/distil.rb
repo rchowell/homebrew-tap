@@ -1,13 +1,13 @@
 class Distil < Formula
   desc "Mount your Distil notes as a local folder"
   homepage "https://distil.so"
-  version "0.1.8"
+  version "0.1.9"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://releases.distil.so/v#{version}/distil-aarch64-apple-darwin"
-      sha256 "8204c1e4eccdbe81741efd266f7f5fe5c237dee7f1bf9f1a9a4b65db8ba02eb8"
+      sha256 "04448b7ca6a0877aeadc4700fd1121ad52a53f34c7bfea90e220b5cec3756f8a"
     end
   end
 
