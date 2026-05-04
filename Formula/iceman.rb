@@ -6,7 +6,7 @@ class Iceman < Formula
   on_macos do
     on_arm do
       url "https://github.com/rchowell/iceman/releases/download/v#{version}/iceman-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "7515bf959b73b956ceb967351c7e299cbb3668a53d35f9c770eb72e00d93ced6"
+      sha256 "741cab1c373b5c78ce25a2d373f3015c96486f0a793bb59be95560bed9f66e36"
     end
   end
 
