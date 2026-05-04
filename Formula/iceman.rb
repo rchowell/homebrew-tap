@@ -1,12 +1,12 @@
 class Iceman < Formula
   desc "Tools for Apache Iceberg"
   homepage "https://github.com/rchowell/iceman"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/rchowell/iceman/releases/download/v0.1.0/iceman-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "741cab1c373b5c78ce25a2d373f3015c96486f0a793bb59be95560bed9f66e36"
+      url "https://github.com/rchowell/iceman/releases/download/v#{version}/iceman-v#{version}-aarch64-apple-darwin.tar.gz"
+      sha256 "ea01deffa24e7039403f426fef34ae217fe26152869832064f11e73b0a1acaad"
     end
   end
 
